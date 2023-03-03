@@ -7,13 +7,13 @@ const App = () => {
 const [width, setWidth] = React.useState(320);
   return (
     <div id="main">
-     <img id="resizable-img" src={image} height={height} width={width} />
-     </div>
-   <div>
-  <label htmlFor="width-slider">Width:</label>
-  <input id="width-slider" type="range" min="100" max="800" value={width} 
-         onChange={(e) => setWidth(parseInt(e.target.value))} />
-</div>
+      <img id="resizable-img" src={image} height={height} width={width} />
+    
+    
+        <label htmlFor="width-slider">Width:</label>
+        <input id="width-slider" type="range" min="100" max="800" value={width}
+          onChange={(e) => setWidth(parseInt(e.target.value))} />
+      </div>
   )
 }
 
